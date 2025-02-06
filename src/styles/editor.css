@@ -1,0 +1,38 @@
+/* Editor container */
+.ProseMirror {
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 150px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Suggestions */
+  .suggestion {
+    padding: 4px 8px;
+    cursor: pointer;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .suggestion.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Autocompleted entries */
+  .autocompleted {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .hashtag {
+    color: #28a745; /* Green for hashtags */
+  }
+  
+  .mention {
+    color: #dc3545; /* Red for mentions */
+  }
+  
+  .relation {
+    color: #ffc107; /* Yellow for relations */
+  }
