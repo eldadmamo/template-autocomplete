@@ -36,9 +36,11 @@ export default function ProseMirrorEditor() {
       {/* Instruction Container */}
       <div className="mb-4 p-4 bg-gray-50 border border-gray-200 rounded-lg">
         <p className="text-xl text-gray-600">
-          <strong>Instructions:</strong> Start typing to see autocomplete suggestions. Use the arrow keys to navigate through the suggestions and press <kbd>Enter</kbd> to select.
+          <strong>Instructions:</strong> 
+          Start typing to see autocomplete suggestions. Use the arrow keys {`"#", "@", "<>"`} to navigate through the suggestions and press <kbd>Enter</kbd> to select.    
         </p>
       </div>
+      
 
       {/* Editor Container */}
       <div ref={editorRef}></div>
