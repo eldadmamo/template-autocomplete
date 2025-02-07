@@ -78,7 +78,6 @@ function getAutocompleteState(doc, pos) {
   return null;
 }
 
-
 export function autocompletePlugin() {
   let activeIndex = 0;
 
@@ -145,9 +144,9 @@ export function autocompletePlugin() {
           return true;
         }
 
-        if (event.key === "Enter" || event.key === "Tab") {
+        if (event.key === "Enter" || event.key === "Tab" || (pluginState.type === "hashtags" && event.key === " ")) {
           event.preventDefault();
-          const suggestion = suggestions[activeIndex];
+          const suggestion = suggestions[activeIndex] || pluginState.matchString;
           if (suggestion) {
             let nodeType;
             switch (pluginState.type) {
